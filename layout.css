@@ -1,0 +1,164 @@
+main {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.main_forside {
+  max-width: unset;
+  margin-inline: 0;
+  padding: 0;
+  margin-top: 0;
+
+  display: grid;
+  grid-template-columns: 1fr minmax(0, 1200px) 1fr;
+}
+/********************* Forside ***********************/
+.grid_bgbilled {
+  grid-column: 1/4;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.7fr auto 1fr;
+  margin-bottom: 80px;
+}
+.width_forside {
+  grid-column: 2/3;
+  margin-inline: 30px;
+}
+/**** Baggrundsbillede med tekst indover ****/
+.baggrundbillede {
+  place-self: stretch;
+  object-fit: cover;
+  display: grid;
+  grid-column: 1/4;
+  grid-row: 1/4;
+  img {
+    margin: 0;
+  }
+}
+.h1_forside {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  place-self: end;
+}
+.h2_forside {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  place-self: start center;
+  margin-top: 0;
+}
+
+/**** Billeder med en i midten ****/
+.overlap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.padelbold {
+  place-self: center;
+}
+
+/**** cta knapper ****/
+.cta {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: 1fr auto 1fr;
+}
+.billede_cta {
+  place-self: stretch;
+  object-fit: cover;
+  display: grid;
+  grid-column: 1/4;
+  grid-row: 1/4;
+}
+.menupunkt {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  place-self: center;
+}
+
+@media (min-width: 800px) {
+  .grid_1_1_forside {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  /**** overlap af billeder ****/
+  .overlap {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.7fr;
+    grid-template-rows: 0.1fr 4fr 1fr;
+    place-self: unset;
+  }
+  .padelspiller {
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 1/4;
+  }
+  .padelbold {
+    display: grid;
+    grid-column: 2/4;
+    grid-row: 2/3;
+  }
+
+  .tekst1 {
+    place-self: center;
+  }
+
+  .tekst2 {
+    display: grid;
+    grid-column: 1/3;
+  }
+
+  .grid_1_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    margin-top: 50px;
+  }
+}
+
+/************************ Regler ***************************/
+@media (min-width: 800px) {
+  .grid-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 0.7fr;
+    gap: 30px;
+  }
+  .padelbane_regler {
+    place-self: center;
+  }
+  .order {
+    order: -1;
+    place-self: center;
+  }
+}
+
+/****************************** Udstyr ************************/
+.grid-padeludstyr {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+@media (min-width: 800px) {
+  .grid-padeludstyr {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 100px;
+  }
+}
+
+/***************************** Rejse ***************************/
+.grid-padel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+@media (min-width: 800px) {
+  .grid-padel {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

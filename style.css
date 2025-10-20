@@ -1,0 +1,260 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/****************************** color **********************************/
+.color {
+  color: #e5c3c6;
+  color: #f5fbff;
+  color: #c2e5ff;
+  color: #3dadff;
+}
+
+/**************************** style af text *****************************/
+h1 {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.h1_forside {
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #3dadff;
+  margin-top: 2rem;
+}
+
+.h2_forside {
+  font-family: "Niconne", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+
+.h2_udstyr {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 50px;
+  margin-top: 100px;
+}
+
+h3 {
+  font-family: "Martel", serif;
+  font-weight: 800;
+  font-style: normal;
+  text-align: center;
+}
+p {
+  font-family: "Martel", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-block: 1rem;
+}
+li {
+  font-family: "Martel", serif;
+  font-size: 1rem;
+}
+
+@media (min-width: 840px) {
+  .h1_forside {
+    font-size: 6rem;
+  }
+  .h2_forside {
+    font-size: 2rem;
+  }
+}
+
+/*********************************** cta knapper ********************************/
+.menupunkt {
+  border-style: double;
+  border: 0.5px solid transparent;
+  margin: 20px;
+  padding: 10px;
+  background-color: #f5fbff;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+.menupunkt a {
+  display: block;
+  padding: 10px;
+  color: #333333;
+  text-decoration: none;
+  text-align: end;
+}
+
+/* Effekt på knapperne når man holder musen over */
+.menupunkt:hover {
+  background-color: #e5c3c6;
+  color: #3dadff;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+/* cta knapper på rejse side */
+.tekst_cta {
+  text-decoration: none;
+  color: black;
+}
+
+.tekst_cta:hover {
+  color: #3dadff;
+  transition: color 0.3s;
+  text-decoration: underline;
+}
+/* Effekt på billede */
+.img_cta:hover {
+  filter: opacity(80%); /* Giver transparenthed på billedet */
+  transition: filter 0.3s; /*gør at det er mere smooth */
+}
+
+/*********************************** style af billeder **********************/
+img {
+  margin-block: 1rem;
+}
+.baggrundbillede {
+  margin: 0;
+  padding: 0;
+}
+
+/********************************** andet *******************************/
+main {
+  padding: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+body {
+  background-color: #f5fbff;
+}
+footer {
+  background-color: #c2e5ff;
+}
+
+/************************************** menu *******************************/
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #e5c3c6;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: #333333;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+}
+
+.menu a:hover {
+  color: #3dadff;
+  text-decoration: underline;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #333333;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+    background-color: transparent;
+    border: 0;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: #e5c3c6;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+  }
+}
+
+/************** prøve ************/

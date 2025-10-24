@@ -31,10 +31,11 @@ main {
   display: grid;
   grid-column: 1/4;
   grid-row: 1/4;
-  img {
-    margin: 0;
-  }
 }
+img {
+  margin: 0;
+}
+
 .h1_forside {
   grid-column: 2/3;
   grid-row: 1/2;
@@ -63,6 +64,7 @@ main {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   grid-template-rows: 1fr auto 1fr;
+  padding: 20px;
 }
 .billede_cta {
   place-self: stretch;
@@ -138,14 +140,21 @@ main {
 .grid-padeludstyr {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  column-gap: 60px;
+  row-gap: 20px;
+}
+.h3_udstyr {
+  font-size: 1rem;
 }
 
 @media (min-width: 800px) {
   .grid-padeludstyr {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 100px;
+    column-gap: 100px;
+  }
+  .h3_udstyr {
+    font-size: 1.3rem;
   }
 }
 
@@ -160,5 +169,65 @@ main {
   .grid-padel {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  .p_rejse {
+    max-width: 950px;
+    place-self: center;
+  }
+  .p_spanien {
+    max-width: 950px;
+    place-self: center;
+    margin-top: 60px;
+  }
+}
+
+/************************** footer *****************************/
+footer {
+  padding: 20px;
+}
+footer p {
+  place-self: center;
+  text-decoration: none;
+}
+footer a {
+  text-decoration: none;
+}
+.footer_h3 {
+  place-self: left;
+}
+
+.grid_footer {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr 1.5fr;
+  grid-template-rows: 0.1fr auto 0.1fr;
+  gap: 30px;
+  margin-top: 50px;
+}
+.footer_logo {
+  display: grid;
+  grid-column: 3/5;
+  place-self: center end;
+}
+.footer_kontakt {
+  display: grid;
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
+.footer_guide {
+  display: grid;
+  grid-column: 4/6;
+  grid-row: 2/3;
+}
+
+@media (min-width: 800px) {
+  .footer_logo {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    place-self: center;
+  }
+  .footer_kontakt {
+    display: grid;
+    grid-column: 3/4;
   }
 }

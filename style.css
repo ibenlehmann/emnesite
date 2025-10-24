@@ -61,6 +61,7 @@ h3 {
   font-weight: 800;
   font-style: normal;
   text-align: center;
+  margin: 20px;
 }
 p {
   font-family: "Martel", serif;
@@ -127,12 +128,13 @@ li {
 }
 
 /*********************************** style af billeder **********************/
-img {
-  margin-block: 1rem;
-}
 .baggrundbillede {
   margin: 0;
   padding: 0;
+}
+/********** Slideshow med billeder ******/
+.mySlides {
+  display: none;
 }
 
 /********************************** andet *******************************/

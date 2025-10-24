@@ -4,6 +4,8 @@
 <head>
     <meta name="robots" content="noindex">
     <title>Malaga, Spanien</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io (4)/apple-touch-icon.png">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
 
@@ -21,11 +23,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="layout.css">
 </head>
-<style>
-    .mySlides {
-        display: none;
-    }
-</style>
 
 <body>
     <header>
@@ -36,6 +33,7 @@
         </div>
         <nav>
             <ul class="menu">
+                <li><a href="index.html">Forside</a></li>
                 <li><a href="regler.html">Regel Guiden</a></li>
                 <li><a href="udstyr.html">Udstyrs Guiden</a></li>
                 <li><a href="rejse.html">Rejse Guiden</a></li>
@@ -52,42 +50,67 @@
         <h1 class="w3-center">Malaga, Spanien</h1>
 
         <div class="w3-content w3-display-container">
-            <img class="mySlides" src="img/spanien.webp" alt="Hotel" style="width:100%">
+            <img class="mySlides" src="img/spanien.webp" alt="padelbaner" style="width:100%">
             <img class="mySlides" src="img/hotel.webp" alt="Hotel" style="width:100%">
-            <img class="mySlides" src="img/benidorm-5118539_1280.jpg" alt="strand" style="width:100%">
-            <img class="mySlides" src="img_forest.jpg" alt="padelbaner" style="width:100%">
+            <img class="mySlides" src="img/strand.webp" alt="strand" style="width:100%">
+            <img class="mySlides" src="img/villa.webp" alt="padelspiller" style="width:100%">
+            <img class="mySlides" src="img/baneomraade.webp" alt="padelspiller" style="width:100%">
 
             <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
             <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
         </div>
-
-        <p>En padelrejse til Spanien giver begyndere mulighed for at lære sporten i rolige og motiverende
-            omgivelser.
-            Padelcentret
-            har moderne faciliteter med flere indendørs og udendørs baner, lyse omklædningsrum, café og områder,
-            hvor
-            man kan slappe
-            af mellem træningssessionerne.</p>
-        <p>
-            Træningen foregår med erfarne instruktører, som viser de grundlæggende slag, bevægelser og taktikker, så
-            deltagerne
-            hurtigt får bedre kontrol over spillet. Samtidig er der tid til at spille kampe og øve sig, hvilket
-            giver
-            mulighed for
-            at afprøve nye slag og lære af erfaringer i praksis.</p>
-        <p>
-            Udover padel tilbyder destinationen masser af sol og skønne omgivelser, så du kan kombinere træningen
-            med
-            afslapning ved
-            poolen eller en gåtur langs stranden. Mange oplever også, at det sociale aspekt – at møde andre
-            begyndere og
-            padelentusiaster – gør læringen mere motiverende og sjov. En padelrejse giver derfor både intensiv
-            læring,
-            ekstra
-            spilletid og mulighed for at udvikle sine færdigheder i en koncentreret og inspirerende ramme.
-        </p>
+        <div class="p_spanien">
+            <p>En padelrejse til Spanien giver begyndere mulighed for at lære sporten i rolige og motiverende
+                omgivelser.
+                Padelcentret
+                har moderne faciliteter med flere indendørs og udendørs baner, lyse omklædningsrum, café og områder,
+                hvor
+                man kan slappe
+                af mellem træningssessionerne.</p>
+            <p>
+                Træningen foregår med erfarne instruktører, som viser de grundlæggende slag, bevægelser og taktikker, så
+                deltagerne
+                hurtigt får bedre kontrol over spillet. Samtidig er der tid til at spille kampe og øve sig, hvilket
+                giver
+                mulighed for
+                at afprøve nye slag og lære af erfaringer i praksis.</p>
+            <p>
+                Udover padel tilbyder destinationen masser af sol og skønne omgivelser, så du kan kombinere træningen
+                med
+                afslapning ved
+                poolen eller en gåtur langs stranden. Mange oplever også, at det sociale aspekt – at møde andre
+                begyndere og
+                padelentusiaster – gør læringen mere motiverende og sjov. En padelrejse giver derfor både intensiv
+                læring,
+                ekstra
+                spilletid og mulighed for at udvikle sine færdigheder i en koncentreret og inspirerende ramme.
+            </p>
+            <p>Køb din padelrejse <a href="https://padelrejsespanien.dk/" target="_blank">
+                    her</a></p>
+        </div>
     </main>
-    <footer>Kontaktinfo</footer>
+    <footer>
+        <div class="grid_footer">
+            <div class="footer_logo"><img src="img/logo.png" alt="Logo"></div>
+            <div class="footer_kontakt">
+                <h3 class="footer_h3">Kontakt os</h3>
+                <p>Padelguiden</p>
+                <p>info@padelguiden.dk</p>
+            </div>
+            <div class="footer_guide">
+                <h3 class="footer_h3">Padel Guides</h3>
+                <a href="regler.html">
+                    <p>Regel Guiden</p>
+                </a>
+                <a href="udstyr.html">
+                    <p>Udstyrs Guiden</p>
+                </a>
+                <a href="rejse.html">
+                    <p>Rejse Guiden</p>
+                </a>
+            </div>
+        </div>
+    </footer>
     <script src="menu.js"></script>
     <script>
         var slideIndex = 1;
